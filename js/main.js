@@ -18,5 +18,5 @@ function showData() {
 
     message.innerHTML = 'key: <b>' + key + '</b>'
         + '<br>localStorage: <b>' + localData + '</b>'
-        + '<br>sessionStorage: <b>' + sessionData + '/b';
+        + '<br>sessionStorage: <b>' + sessionData + '</b>';
 }
