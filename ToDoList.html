@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ToDoList
+    </title>
+</head>
+
+<body onload="showtask()">
+    <form name="form1">
+        <input type="text" name="newTask" size="30" placeholder="追加するタスクを入力してださい。">
+        <input type="button" value="タスクの追加" onclick="setTask('new')">
+        <input type="button" value="全タスクの削除" onclick="removeTask('all')">
+        <hr>
+        <span id="taskList"></span>
+    </form>
+
+</body>
+<script src="js/main2.js"></script>
+
+</html>
