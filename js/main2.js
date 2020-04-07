@@ -25,7 +25,8 @@ function showTask(selectedKey) {
                 += '<meter min="0" max="100" '
                 + ' value="' + taskData[0] + '"></meter>'
                 + '<a href="#" onclick="showTask(' + key + ')">'
-                + '[' + taskData[0] + '(' + taskData[1] + '%)]</a>'
+                + '[' + taskData[0]
+                + '(' + taskData[1] + '%)]</a>'
                 + '<br><br>';
         }
     }
