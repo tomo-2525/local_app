@@ -22,10 +22,10 @@ function showTask(selectedKey) {
                 + '<br><br>';
         } else {
             taskList.innerHTML
-                += '<meter min="0" max="100" '
-                + ' value="' + taskData[1] + '"></meter>'
-                + '<a href="#" onclick="showTask(' + key + ')">'
+                += '<a href="#" onclick="showTask(' + key + ')">'
                 + '[' + taskData[0] + '(' + taskData[1] + '%)]</a>'
+                + '<meter min="0" max="100" '
+                + ' value="' + taskData[1] + '"></meter>'
                 + '<br><br>';
         }
     }
