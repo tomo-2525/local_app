@@ -10,6 +10,7 @@
 <body onload="showtask()">
     <form name="form1">
         <input type="text" name="newTask" size="30" placeholder="追加するタスクを入力してださい。">
+        <input type="range" name="newProgress" min="0" max="100" step="5" value="0">
         <input type="button" value="タスクの追加" onclick="setTask('new')">
         <input type="button" value="全タスクの削除" onclick="removeTask('all')">
         <hr>
