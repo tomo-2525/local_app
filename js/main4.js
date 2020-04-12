@@ -12,7 +12,6 @@ function showAddress() {
 
         tx.executeSql(sql, [], function (tx, rs) {
             addressList.innerHTML = '';
-            １１１１１１
             for (var i = 0; i < rs.rows.length; i++) {
                 var rowText = '<tr>'
                     + '<td>' + rs.rows.item(i).name + '</td>'
