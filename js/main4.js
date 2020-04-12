@@ -10,7 +10,7 @@ function showAddress() {
             + 'WHERE name LIKE "%' + qword + '%"'
             + 'OR email LIKE "%' + qword + '%"';
 
-        tx.executeSQL(sql, [], function (tx, rs) {
+        tx.executeSql(sql, [], function (tx, rs) {
             addressList.innerHTML = "";
 
             for (var i = 0; i < rs.rows.length; i++) {
