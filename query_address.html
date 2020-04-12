@@ -6,9 +6,24 @@
 </head>
 
 <body>
-
+    |<a href="new_address.html">新規登録</a>|<b>検索</b>|
+    <hr>
+    <form name="form1" onsubmit="return showAddress();">
+        <input type="search" name="qword" size="40" placeholder="名前またはメールアドレス">
+        <input type="submit" value="検索">
+    </form>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>名前</th>
+                <th>メールアドレス</th>
+            </tr>
+        </thead>
+        <tbody id="addressList"></tbody>
+    </table>
 </body>
 <link rel="stylesheet" href="css/style.css">
-<!-- <script src="js/main4.js"></script> -->
+<script src="js/main4.js"></script>
 
 </html>
