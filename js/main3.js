@@ -24,7 +24,7 @@ function setAddress() {//アドレスを登録する関数
         tx.executeSql(sql_insert);
 
         //完了メッセージの表示
-        message.innerHTML = 'アドレスデータを登録しました。'
+        message.innerHTML += 'アドレスデータを登録しました。'
             + '<br><br>名前：<b>' + uname + '</b>'
             + '<br><br>メールアドレス：<b>' + umail + '</b>';
     });
