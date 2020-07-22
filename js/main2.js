@@ -34,12 +34,12 @@ function showTask(selectedKey) {
 function setTask(selectedKey) {
     if (selectedKey == 'new') {
         var key = new Date().getTime();
-        var data = document.form1.newTask.value;
-        var progress = document.form1.newProgress.value;
+        var data = document.form.newTask.value;
+        var progress = document.form.newProgress.value;
     } else {
         var key = selectedKey;
-        var data = document.form1.modTask.value;
-        var progress = document.form1.modProgress.value;
+        var data = document.form.modTask.value;
+        var progress = document.form.modProgress.value;
     }
 
     var data = data + ':' + progress;

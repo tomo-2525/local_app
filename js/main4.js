@@ -1,10 +1,10 @@
 var addressList = document.getElementById("addressList");
 
 function showAddress() {
-    var db = openDatabase('addressDB', '1', 'AddressDB', '2*1024*1024');
+    var db = openDatabase('addressDB', '1', 'AddressDB', 2 * 1024 * 1024);
 
     db.transaction(function (tx) {
-        var qword = document.form1.qword.value;
+        var qword = document.form.qword.value;
 
         sql = 'SELECT id,name,email FROM address_tb'
             + 'WHERE name LIKE "%' + qword + '%"'

@@ -13,8 +13,8 @@ function setAddress() {//アドレスを登録する関数
         tx.executeSql(sql_create);
 
         //入力データの取得
-        var uname = document.form1.uname.value;
-        var umail = document.form1.umail.value;
+        var uname = document.form.uname.value;
+        var umail = document.form.umail.value;
 
         //データ挿入のSQL
         var sql_insert = 'INSERT INTO address_tb(name, email)'
