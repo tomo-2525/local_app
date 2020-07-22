@@ -11,15 +11,15 @@ function showAddress() {
             + 'OR email LIKE "%' + qword + '%"';
 
         tx.executeSql(sql, [], function (tx, rs) {
-            addressList.innerHTML = '<tr><td>hoge</td></tr><tr><td>hoge</td></tr>';
-            // for (var i = 0; i < rs.rows.length; i++) {
-            //     var rowText = '<tr>'
-            //         + '<td>' + rs.rows.item(i).name + '</td>'
-            //         + '<td>' + rs.rows.item(i).email + '</td>'
-            //         + '</tr>';
+            addressList.innerHTML = '';
+            for (var i = 0; i < rs.rows.length; i++) {
+                var rowText = '<tr>'
+                    + '<td>' + rs.rows.item(i).name + '</td>'
+                    + '<td>' + rs.rows.item(i).email + '</td>'
+                    + '</tr>';
 
-            //     addressList.innerHTML += rowText;
-            // }
+                addressList.innerHTML += rowText;
+            }
         }, null);
     });
 
